@@ -1,4 +1,5 @@
 'use strict';
+const geoJSON = require('./lib/geolocation.json');
 const MarkerMaker = require('./lib/markermaker');
 const getCradlepointData = require('./lib/functions');
 const getLocationData = require('./lib/getlocation');

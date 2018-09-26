@@ -52,5 +52,8 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var weatherB = L.tileLayer(`https://maps.aerisapi.com/{client_id}_{client_key}/radar/{z}/{x}/{y}/current.png`, {
     client_id: 'e8sH7sM8xAJt2N5fbisNF',
-    client_key: 'eZ5vDLG3eQbFKFvfdWdCqEQP5qjM0Q8gzE0Hxaeq'
+    client_key: 'eZ5vDLG3eQbFKFvfdWdCqEQP5qjM0Q8gzE0Hxaeq',
+    opacity: 0.5
 }).addTo(map);
+
+weatherB.className.a;
