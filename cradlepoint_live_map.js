@@ -1,5 +1,4 @@
 'use strict';
-const geoJSON = require('./lib/geolocation.json');
 const MarkerMaker = require('./lib/markermaker');
 const getCradlepointData = require('./lib/functions');
 const getLocationData = require('./lib/getlocation');
@@ -20,7 +19,6 @@ app.use(function(req, res, next) {
 
 app.ws('/connect', (ws, req) => {
     getCradlepointData(function(err, payload) {
-        console.log(payload.length);
         if (err) return console.log(err);
         for (let i = 0; i < payload.length; i++) {
             objMapMarker[i] = new MarkerMaker(
@@ -32,11 +30,16 @@ app.ws('/connect', (ws, req) => {
         }
 
         for (let i = 0; i < Object.keys(objMapMarker).length; i++) {
-            getLocationData(objMapMarker[i].ip, function(err, payload) {
+            getLocationData(objMapMarker[i].name, function(err, payload) {
                 if (err) return console.log(err);
-                objMapMarker[i].location = {
-                    lat: payload.latitude,
-                    lon: payload.longitude
+
+                objMapMarker[i].loc = {
+                    StoreAddress: payload.StoreAddress,
+                    City: payload.City,
+                    State: payload.State,
+                    ZipCode: payload.ZipCode,
+                    lat: payload.Latitude,
+                    lon: payload.Longitude
                 };
                 ws.send(JSON.stringify(objMapMarker[i]));
             });

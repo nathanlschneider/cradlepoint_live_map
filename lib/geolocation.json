@@ -3339,8 +3339,8 @@
         "State": "MI",
         "ZipCode": 49624,
         "MatchScore": 0,
-        "Latitude": 0,
-        "Longitude": 0,
+        "Latitude": 42.841629,
+        "Longitude": -85.862952,
         "MatchType": ""
     },
     {
@@ -3416,8 +3416,8 @@
         "State": "FL",
         "ZipCode": 32095,
         "MatchScore": 100,
-        "Latitude": 0,
-        "Longitude": 0,
+        "Latitude": 29.988274,
+        "Longitude": -81.453498,
         "MatchType": "Exact"
     },
     {
@@ -3493,8 +3493,8 @@
         "State": "MI",
         "ZipCode": 48060,
         "MatchScore": 100,
-        "Latitude": 42.9787653,
-        "Longitude": -82.46337965,
+        "Latitude": 42.9787653000979,
+        "Longitude": -82.46337965436,
         "MatchType": "Exact"
     },
     {
@@ -3509,7 +3509,7 @@
         "MatchType": "Exact"
     },
     {
-        "Store": "",
+        "Store": 888,
         "StoreAddress": "45 Ottawa Ave SW Suite #600",
         "City": "Grand Rapids",
         "State": "MI",
@@ -3520,7 +3520,7 @@
         "MatchType": "Exact"
     },
     {
-        "Store": "",
+        "Store": 889,
         "StoreAddress": "45 Ottawa Ave SW Suite #600",
         "City": "Grand Rapids",
         "State": "MI",
@@ -3531,7 +3531,7 @@
         "MatchType": "Exact"
     },
     {
-        "Store": "",
+        "Store": 887,
         "StoreAddress": "45 Ottawa Ave SW Suite #600",
         "City": "Grand Rapids",
         "State": "MI",
@@ -3542,7 +3542,7 @@
         "MatchType": "Exact"
     },
     {
-        "Store": "",
+        "Store": 886,
         "StoreAddress": "45 Ottawa Ave SW Suite #600",
         "City": "Grand Rapids",
         "State": "MI",
