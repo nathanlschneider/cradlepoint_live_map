@@ -2,13 +2,31 @@
     height: 98vh;
 }
 
-#floatBox {
+#LTE {
     position: absolute;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.205);
-    width: 200px;
-    height: 200px;
-    top: 20px;
+    top: 3px;
+    left: -4px;
+    background-color: rgb(253, 229, 8);
+    width: 6px;
+    height: 12px;
+}
+
+#WAN {
+    position: absolute;
+    top: 23px;
+    left: -4px;
+    background-color: rgb(74, 247, 6);
+    width: 6px;
+    height: 12px;
+}
+
+#Offline {
+    position: absolute;
+    top: 43px;
+    left: -4px;
+    background-color: rgb(223, 15, 0);
+    width: 6px;
+    height: 12px;
 }
 
 .green-pin {

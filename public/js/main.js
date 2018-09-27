@@ -65,9 +65,9 @@ const baseMaps = {
     // 'Dark Map': darkMap
 };
 const markerOverlay = {
-    LTE: markerLayerLTE,
-    WAN: markerLayerWAN,
-    Offline: markerLayerOffline
+    'LTE <div id="LTE"></div>': markerLayerLTE,
+    'WAN <div id="WAN"></div>': markerLayerWAN,
+    'Offline <div id="Offline"></div>': markerLayerOffline
 };
 
 L.control.layers(baseMaps, markerOverlay).addTo(map);
